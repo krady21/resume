@@ -1,0 +1,225 @@
+\documentclass[letterpaper,13pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[romanian, english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Bogdan Grigoruță}} & Email : \href{mailto:bogdangrigoruta@gmail.com}{bogdangrigoruta@gmail.com}\\
+  \href{https://github.com/krady21}{https://github.com/krady21} & Mobile : +40757109950\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Politehnica of Bucharest}{Bucharest, RO}
+      {Bachelor of Science in Sytems Engineering}{Sep. 2017 -- Jun. 2021}
+    \resumeSubheading
+      {Gheorghe Lazar National College}{Bucharest, RO}
+      {Mathematics - Informatics Specialization}{Sep. 2013 -- Jun. 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ROSEdu Summer of Code}{Bucharest, RO}
+      {Software Developer}{Jun 2020 - Oct 2020}
+      \resumeItemListStart
+        \resumeItem{Tock OS}
+        {Tock is an open source embedded operating system designed for running multiple concurrent, mutually distrustful applications on Cortex-M and RISC-V based embedded platforms. Tock's design centers around protection, both from potentially malicious applications and from device drivers. }
+        \resumeItem{Contributions}
+        {Wrote peripheral drivers in Rust for the flash memory, watchdog and random number generator found on STM32F3 and STM32F4 discovery boards. (\url{https://github.com/tock/tock/commits?author=krady21})}
+      \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {Google}{Mountain View, CA}
+    %  {Software Engineer}{Oct 2016 - Present}
+    %  \resumeItemListStart
+    %    \resumeItem{Tensorflow}
+    %      {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
+    %    \resumeItem{Apache Beam}
+    %      {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+    %  \resumeItemListEnd
+      
+%% --------Multiple Positions Heading------------
+%%    \resumeSubSubheading
+%%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%%     \resumeItemListStart
+%%        \resumeItem{Apache Beam}
+%%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%%     \resumeItemListEnd
+%%    \resumeSubHeadingListEnd
+%%-------------------------------------------
+
+    %\resumeSubheading
+    %  {Coursera}{Mountain View, CA}
+    %  {Senior Software Engineer}{Jan 2014 - Oct 2016}
+    %  \resumeItemListStart
+    %    \resumeItem{Notifications}
+    %      {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
+    %    \resumeItem{Nostos}
+    %      {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
+    %    \resumeItem{Workflows}
+    %      {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
+    %    \resumeItem{Data Collection}
+    %      {Designed the internal survey and crowd sourcing platform which allowed for creating various tasks for crowd sourcing or embedding surveys across the Coursera platform.}
+    %    \resumeItem{Dev Environment}
+    %      {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
+    %    \resumeItem{Data Warehousing}
+    %      {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
+    %    \resumeItem{Recommendations}
+    %      {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
+    %    \resumeItem{Content Discovery}
+    %      {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
+    %    \resumeItem{Course Dashboards}
+    %      {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
+    %  \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {Lucena Research}{Atlanta, GA}
+    %  {Data Scientist}{Summer 2012 and 2013}
+    %  \resumeItemListStart
+    %    \resumeItem{Portfolio Management}
+    %      {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
+    %    \resumeItem{QuantDesk}
+    %      {Python backend for a web application used by hedge fund managers for portfolio management.}
+    %  \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {Georgia Institute of Technology}{Atlanta, GA}
+    %  {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
+    %  \resumeItemListStart
+    %    \resumeItem{Research Assistant - Machine Learning}
+    %      {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
+    %    \resumeItem{Teaching Assistant - Computational Investing}
+    %      {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+    %  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+% BFMC, Teme SO, Tema BD, Aoc(maybe)
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Bosch Future Mobility Challenge 2021}
+      {Technical team competition focused on developing autonomous driving solutions on 1/10 scale vehicles. On the software side, I worked on integrating the lane detector and lane keeping controller, as well as on defining the overall software architecture. On the hardware side, I integrated our Inertial Measurement Unit (BNO055) i2c driver with the mbed OS i2c API supported by our microcontroller. Currently, I am working on a Kalman filter for localization and state estimation.}
+    \resumeSubItem{Open Source Contributor}
+      {Exposed angular velocity, acceleration and magnetic field readings in the C++ MAVSDK telemetry API (\url{https://github.com/mavlink/MAVSDK/pull/779}).}
+    \resumeSubItem{Advent of Code}
+      {Advent calendar of programming puzzles of various difficuties. I participated in the 2020 edition and solved 24 out of the 25 daily challenges in Rust.}
+    \resumeSubItem{NBA Statistics App}
+      {Wrote a Django web app in Python for my university databases course that displays statistics about NBA teams, players and games.}
+    \resumeSubItem{HTTP Web Server}
+      {Wrote a mini web server for my operating systems course using epoll and socket asynchronous operations (send() and recv()) in C.}
+    \resumeSubItem{C Preprocessor Clone}
+      {Wrote a C preprocessor clone that implements a subset of its directives (\#define, \#ifdef, \#include, \#if, \#else, \#endif).}
+    \resumeSubItem{Mini ALU}
+      {Designed a small ALU (Arithmetic Logic Unit) as a state machine in Verilog for my Computer Architecture course.}
+    \resumeSubItem{PID controller design}
+      {Designed and tuned PI/PID controllers for a dynamic process in Matlab and Simulink as a project for my Control Theory course.}
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\textbf{Programming Languages}}
+    {C, Rust, Python, C++, Bash, Matlab, Verilog} \\
+    \resumeSubItem{\textbf{Other}}
+    {Git, Linux, Docker, SQLite} \\
+    \resumeSubItem{\textbf{Spoken Languages}}
+    {Romanian: Native, English: C1, German: B1} \\
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
